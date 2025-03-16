@@ -1,0 +1,69 @@
+nav{
+    background: black ;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.landing{
+    height: calc(100vh - 76px);
+    background: #000 ;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+::selection{
+    color: white;
+    background: rgb(143, 121, 0);
+}
+a{
+    font-weight: bold;
+}
+.active , a:hover{
+    color: rgb(144, 0, 255) !important;
+}
+.landing{
+    position: relative;
+}
+.options{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.options img {
+    width: 75px;
+}
+.options button {
+    background: transparent;
+    border: none;
+}
+@media (max-width:990px){
+    .image{
+        width: 200px;
+    }
+    .options{
+        position: absolute;
+        right: 0;
+        left: 90%;
+        bottom: 10px;
+        transform: translateX(-90%);
+        -webkit-transform: translateX(-90%);
+        -moz-transform: translateX(-90%);
+        -ms-transform: translateX(-90%);
+        -o-transform: translateX(-90%);
+}
+    .options button {
+        display: block;
+    }
+    .options img {
+        width: 45px;
+    }
+}
